@@ -2,7 +2,7 @@ const xblauth = require('@xboxreplay/xboxlive-auth');
 
 class dashAuthenticate {
 	constructor(email, password) {
-		try { return xblauth.authenticate(email, password); } catch (e) { throw e; }
+		try { return xblauth.authenticate(email, password, { XSTSRelyingParty: "https://pocket.realms.minecraft.net/" }); } catch (e) { throw e; }
 	}
 }
 
