@@ -1,4 +1,4 @@
-const xblauth = require('@xboxreplay/xboxlive-auth');
+const xblauth = require("@xboxreplay/xboxlive-auth");
 
 class dashAuthenticate {
 	constructor(email, password) {
