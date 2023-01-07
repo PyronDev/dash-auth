@@ -1,6 +1,6 @@
 {
   "name": "@pyrondev/dash-auth",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Authentication system for dash",
   "main": "index.js",
   "dependencies": {
