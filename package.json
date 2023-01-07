@@ -1,0 +1,29 @@
+{
+  "name": "@pyrondev/dash-auth",
+  "version": "1.0.6",
+  "description": "Authentication system for dash",
+  "main": "index.js",
+  "dependencies": {
+    "@xboxreplay/xboxlive-auth": "^4.0.0",
+    "axios": "^0.21.4",
+    "follow-redirects": "^1.15.1"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PyronDev/dash-auth.git"
+  },
+  "keywords": [
+    "authentication",
+    "dash"
+  ],
+  "author": "pyrondev",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/PyronDev/dash-auth/issues"
+  },
+  "homepage": "https://github.com/PyronDev/dash-auth#readme",
+  "devDependencies": {}
+}
