@@ -1,4 +1,4 @@
-# dash-ausdfth
+# dash-auth
 Used to authenticate with an xbox account for dash
 
 # Installation
