@@ -1,7 +1,7 @@
 const { exit } = require('process');
 
 try {
-	const { dashAuthenticate } = require('./lib/index');
+	const { dashAuthenticate } = require('./build/index');
 	(async () => {
 		try {
 			const dashAuth = await dashAuthenticate("email", "password");
