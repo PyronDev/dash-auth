@@ -2,7 +2,7 @@
   "name": "@pyrondev/dash-auth",
   "version": "1.0.9",
   "description": "Authentication system for dash",
-  "main": "lib/index.js",
+  "main": "build/index.js",
   "dependencies": {
     "@xboxreplay/xboxlive-auth": "^4.0.0",
     "axios": "^0.21.4",
