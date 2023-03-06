@@ -11,13 +11,13 @@ Get the xsts token of an xbox account using username and password
 const { dashAuthenticate } = require("@pyrondev/dash-auth");
 (async () => {
 	const dashAuth = await dashAuthenticate("email", "password");
-	console.log(`XBL3.0 x=${dashAuth.user_hash};${dashAuth.xsts_token}`);
+	console.log(`XBL3.0 x=${dashAuth.userHash};${dashAuth.XSTSToken}`);
 })(); // Async function needed so nodejs doesnt complain about the await
 ```
 ## Javascript
 ```js
-const { dashAuthenticate } = require("@pyrondev/dash-auth");
+const { dashAuthenticate } = require("./dash-auth-ts/build");
 dashAuthenticate("email", "password").then(dashAuth => {
-	console.log(`XBL3.0 x=${dashAuth.user_hash};${dashAuth.xsts_token}`);
+	console.log(`XBL3.0 x=${dashAuth.userHash};${dashAuth.XSTSToken}`);
 });
 ```
