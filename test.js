@@ -1,10 +1,10 @@
 const { exit } = require('process');
 
 try {
-	const { dashAuthenticate } = require('./index.js');
+	const { dashAuthenticate } = require('./lib/index');
 	(async () => {
 		try {
-			const dashAuth = await new dashAuthenticate("email", "password");
+			const dashAuth = await dashAuthenticate("email", "password");
 		} catch (e) {
 			if (e.toString() != "XRError: Invalid credentials or 2FA enabled") {
 				console.log(`Error: test.js ran with error: \"${e}\"`);

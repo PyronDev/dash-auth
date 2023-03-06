@@ -9,7 +9,8 @@
     "follow-redirects": "^1.15.1"
   },
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "build" : "tsc"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,7 @@
     "url": "https://github.com/PyronDev/dash-auth/issues"
   },
   "homepage": "https://github.com/PyronDev/dash-auth#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
 }
