@@ -1,8 +1,8 @@
 {
   "name": "@pyrondev/dash-auth",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Authentication system for dash",
-  "main": "index.js",
+  "main": "lib/index.js",
   "dependencies": {
     "@xboxreplay/xboxlive-auth": "^4.0.0",
     "axios": "^0.21.4",
@@ -10,7 +10,7 @@
   },
   "scripts": {
     "test": "node test.js",
-    "build" : "tsc"
+    "build" : "tsc --outDir build"
   },
   "repository": {
     "type": "git",
