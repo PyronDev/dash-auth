@@ -16,7 +16,7 @@ const { dashAuthenticate } = require("@pyrondev/dash-auth");
 ```
 ## Javascript
 ```js
-const { dashAuthenticate } = require("./dash-auth-ts/build");
+const { dashAuthenticate } = require("@pyrondev/dash-auth");
 dashAuthenticate("email", "password").then(dashAuth => {
 	console.log(`XBL3.0 x=${dashAuth.user_hash};${dashAuth.xsts_token}`);
 });

@@ -1,7 +1,19 @@
 import { authenticate } from '@xboxreplay/xboxlive-auth';
-
-function dashAuthenticate(email: string, password: string) {
-	try { return authenticate(email, password, { XSTSRelyingParty: "https://pocket.realms.minecraft.net/" }); } catch (e) { throw e; }
+interface RelayingParties {
+	mcbe: string;
+	xbl: string;
+}
+class rp implements RelayingParties {
+	mcbe: string;
+	xbl: string;
+	constructor() {
+		this.mcbe = "https://pocket.realms.minecraft.net/";
+		this.xbl = "http://xboxlive.com/";
+	}
 }
 
-export { dashAuthenticate }
+function dashAuthenticate(email: string, password: string, relayingParty: string = "https://pocket.realms.minecraft.net/") {
+	try { return authenticate(email, password, { XSTSRelyingParty: relayingParty }); } catch (e) { throw e; }
+}
+const relayingParties = new rp();
+export { dashAuthenticate, relayingParties };
