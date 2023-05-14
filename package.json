@@ -6,11 +6,12 @@
   "dependencies": {
     "@xboxreplay/xboxlive-auth": "^4.0.0",
     "axios": "^0.21.4",
-    "follow-redirects": "^1.15.1"
+    "follow-redirects": "^1.15.1",
+    "prismarine-auth": "^2.2.0"
   },
   "scripts": {
     "test": "node test.js",
-    "build" : "tsc"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
