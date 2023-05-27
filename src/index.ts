@@ -9,8 +9,8 @@ class rp implements RelayingParties {
 	mcbe: string;
 	xbl: string;
 	constructor() {
-		this.mcbe = "https://pocket.realms.minecraft.net/";
-		this.xbl = "http://xboxlive.com/";
+		this.mcbe = "https://pocket.realms.minecraft.net";
+		this.xbl = "http://xboxlive.com";
 	}
 }
 
