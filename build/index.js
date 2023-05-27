@@ -14,7 +14,7 @@ const xboxlive_auth_1 = require("@xboxreplay/xboxlive-auth");
 const prismarine_auth_1 = require("prismarine-auth");
 class rp {
     constructor() {
-        this.mcbe = "https://pocket.realms.minecraft.net";
+        this.mcbe = "https://pocket.realms.minecraft.net/";
         this.xbl = "http://xboxlive.com";
     }
 }
